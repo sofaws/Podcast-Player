@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <title>Podcasts</title>
+      <!-- Bootstrap Core CSS -->
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+      <!-- Custom CSS -->
+      <link href="css/style.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+      <script src="js/script.js"></script>
+   </head>
+   <body>
+      <!-- Navigation -->
+      <nav class="navbar navbar-inverse navbar-fixed-top">
+         <div class="container">
+            <div class="navbar-header">
+               <a class="navbar-brand" href="#accueil">Lecteur de podcasts</a>
+            </div>
+         </div>
+         <!-- /.container -->
+      </nav>
+      <!-- Page Content -->
+      <div class="container" id="content">
+         <div class="row">
+            <div class="col-md-3 fixed" id="menu">
+               <div class="input-group">
+                  <input type="text" class="form-control"  id="urlPodcast" placeholder="Votre podcast...">
+                  <span class="input-group-btn">
+                  <button class="btn btn-default" id="valide" type="button">Charger!</button>
+                  </span>
+               </div>
+               <!-- /input-group --><br><br>
+               <p class="lead">Podcasts chargés</p>
+               <div class="list-group">
+                  <div id="listePodcasts"> </div>
+                  <a href="#all" class="list-group-item"><i class="fa fa-list"></i>   Afficher tous les podcasts</a>
+                  <a href="" id="clear" class="list-group-item"><i class="fa fa-remove"></i>   Effacer les podcasts</a>
+                  <a href="#aide" class="list-group-item"><i class="fa fa-info-circle"></i>   Comment ça marche ?</a>
+               </div>
+            </div>
+            <div class="col-md-9"  id="video">
+               <div class="well">
+                  <video width="640" height="360" id="lecteur"  controls></video>
+               </div>
+            </div>
+         </div>
+         <div class="rows">
+            <div class="col-lg-offset-3 col-md-9"  style="display:none;" id="contentpod">
+               <div class="panel panel-default">
+                  <div class="panel-heading">
+                     <h3 class="panel-title">Podcasts</h3>
+                     <input class="btn btn-danger" type="button" name="name" id="podbtn" value="Fermer le podcast">
+                  </div>
+                  <div class="panel-body">
+                     <div id="contentPodcasts"> </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-offset-3 col-md-9"  style="display:none;" id="aide">
+               <div class="panel panel-default">
+                  <div class="panel-heading">
+                     <h3 class="panel-title">Aide</h3>
+                     <input class="btn btn-danger" type="button" name="name" id="aidebtn" value="Fermer l'aide">
+                  </div>
+                  <div class="panel-body">
+                     <div class="alert alert-info" role="alert">
+                        Cette aplication Web vous permet de lire des podcasts XML très facilement.
+                        Pour charger un podcast vous devez rentrer son lien dans la textbox et le charger.
+                        Celui-ci apparraitra donc dans le menu à gauche.
+                        Vous pouvez ensuite y accèder en cliquant dessus. Une fois ceci fait vous verrez la liste des médias que contient le podcast, lors de l'appuie sur "Lire", le média choisis
+                        sera chargé dans le lecteur.
+                        Si le bouton "Lire" est gris, c'est que vous avez déja lu ce média.
+                     </div>
+                     <div class="alert alert-info" role="alert">
+                        Les podcasts chargés sont automatiquement sauvegardé pour les prochaines utilisations de l'application. Vous pouvez enlever un podcast en cliquant
+                        sur le bouton "Supprimer" en dessous de celui-ci. Vous pouvez aussi supprimer tous les podcasts chargés en cliquant sur "Effacer les podcasts".
+                     </div>
+                     <div class="alert alert-danger" role="alert">
+                        Si un problème lors du chargement d'un podcast à lieu, merci d'envoyer un mail à lisa.mounier@etu.univ-lyon1.fr ou à maxime.chabert@etu-univ-lyon1.fr.
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <footer>
+         MOUNIER LISA - CHABERT MAXIME
+      </footer>
+      <!-- /.container -->
+   </body>
+</html>

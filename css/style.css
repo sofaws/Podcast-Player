@@ -1,0 +1,149 @@
+
+
+body {
+    padding-top: 70px;
+}
+
+footer {
+    margin: 50px 0;
+}
+
+#lecteur
+{
+	background:#333;
+
+}
+
+#divLecteur
+{
+	display: inline-block;
+}
+
+h3{
+  margin:0%;
+}
+
+#video{
+  text-align: center;
+}
+
+#lecteur
+{
+  margin:5px;
+}
+
+.navbar-inverse
+{
+  background-color:#3D7B80;
+  border-color: #3D7B80;
+}
+
+.navbar-inverse .navbar-brand
+{
+  color: white;
+}
+
+footer
+{
+  background-color: #3D7B80;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  margin:0px;
+}
+
+#content
+{
+  margin-top:30px;
+}
+
+#valide
+{
+  color:white;
+  background-color: #3D7B80;
+}
+
+.fixed{
+  margin-top: 5%;
+}
+
+.table tr
+{
+  border-bottom: 1px solid #3D7B80;
+}
+
+.table td
+{
+  text-align:  center;
+  padding: 2%;
+}
+
+.table input
+{
+  background-color: #3D7B80;
+  color:white;
+  padding-left: 30px;
+  padding-right:  30px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.titre
+{
+  font-weight: bold;
+  font-size: 15px;
+}
+
+#chargement
+{
+  display:none;
+}
+
+#contentpod h1
+{
+  color: #3D7B80;
+}
+
+video{
+  color:#3D7B80;
+}
+
+.list-group-item{
+  background-color: #3D7B80;
+}
+
+.list-group-item {
+    background-color: #3D7B80;
+    color: white;
+}
+a.list-group-item, button.list-group-item
+{
+  color: white;
+}
+
+#delete{
+    background-color: white;
+    color:#3D7B80;
+    padding-top : 3px;
+    padding-bottom: 3px;
+    text-align: center;
+}
+
+#aidebtn
+{
+  position: absolute;;
+  right:50px;
+  top:7px;
+  padding : 2px;
+}
+
+#podbtn
+{
+  position: absolute;;
+  right:50px;
+  top:7px;
+  padding : 2px;
+}
